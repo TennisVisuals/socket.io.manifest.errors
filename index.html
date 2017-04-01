@@ -31,6 +31,8 @@
     <script>
       $(function () {
         var socket = io();
+        // tried this too:
+        // var socket = io('http://localhost', { port: 3000 });
         $('form').submit(function(){
           socket.emit('chat message', $('#m').val());
           $('#m').val('');
