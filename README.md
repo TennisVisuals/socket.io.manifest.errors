@@ -20,7 +20,10 @@ In the Javascript Console:
 ```socket.io-1.2.0.js:2 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t=1491065530785-0 net::ERR_FAILED```
 
 to remove the cache in Chrome:
-```chrome://appcache-internals/```
+```
+        chrome://appcache-internals/
+        
+```
 
 ## FIX
 
@@ -41,7 +44,9 @@ Now I am running on a server using Nginx and Cloudflare.
 
 Without the manifest file I get the following error in the Javascript console, but **everything still works**:
 
-``` socket.io-1.7.2.js:7370 WebSocket connection to 'wss://hiveeye.net/socket.io/?EIO=3&transport=websocket&sid=rM2LKvCGJwaFx7RrAAAf' failed: Error during WebSocket handshake: Unexpected response code: 400 ```
+``` 
+socket.io-1.7.2.js:7370 WebSocket connection to 'wss://hiveeye.net/socket.io/?EIO=3&transport=websocket&sid=rM2LKvCGJwaFx7RrAAAf' failed: Error during WebSocket handshake: Unexpected response code: 400
+```
 
 after modifying ```index.html```
 and changing 
