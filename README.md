@@ -6,17 +6,18 @@ This is an example of socket.io *not* working when a manifest is added
 - npm start
 - open localhost:3000 in browser
 
-everything works!
+**everything works!**
 
-modify index.html
-
-change
+modify ```index.html```
+changing 
 ```<html>```
 to
 ```<html manifest='index.manifest'>```
 
-## ERROR:
-socket.io-1.2.0.js:2 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t=1491065530785-0 net::ERR_FAILED
+## ERROR
+In the Javascript Console:
+
+```socket.io-1.2.0.js:2 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t=1491065530785-0 net::ERR_FAILED```
 
 to remove the cache in Chrome:
 ```chrome://appcache-internals/```
