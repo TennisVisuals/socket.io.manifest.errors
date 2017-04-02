@@ -49,9 +49,12 @@ and changing
 to
 ```<html manifest='index.manifest'>```
 
-the client works **exactly once**, then fails with the following error:
+the client works **exactly once**, then fails with the following errors:
 
 ```
 socket.io-1.7.2.js:4948 GET https://hiveeye.net/socket.io/?EIO=3&transport=polling&t=Lik5SC5&sid=rM2LKvCGJwaFx7RrAAAf net::ERR_FAILED
+
+GET https://hiveeye.net/socket.io/?EIO=3&transport=polling&t=Lik5STN net::ERR_FAILED
+
 GET https://hiveeye.net/socket.io/?EIO=3&transport=polling&t=Lik5STN net::ERR_FAILED
 ```
