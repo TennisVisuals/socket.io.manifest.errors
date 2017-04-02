@@ -37,10 +37,12 @@
     <script src="./jquery-1.11.1.js"></script>
     <script>
       $(function () {
-        var socket = io();
-        // tried this too:
-        // var socket = io('http://localhost:3000');
-        // var socket = io('http://localhost', { port: 3000 });
+        var connectionOptions =  {
+            "force new connection" : true,
+            "reconnectionAttempts": "Infinity",
+            "timeout" : 10000,
+        };
+        var socket = io(connectionOptions);
         $('form').submit(function(){
           socket.emit('chat message', $('#m').val());
           $('#m').val('');
