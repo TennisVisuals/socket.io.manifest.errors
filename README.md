@@ -23,18 +23,18 @@ socket.io-1.2.0.js:2 GET http://localhost:3000/socket.io/?EIO=3&transport=pollin
 
 to remove the cache in Chrome:
 ```
-        chrome://appcache-internals/
+chrome://appcache-internals/
 ```
 
 ## FIX
 
 ```
-        var connectionOptions =  {
-            "force new connection" : true,
-            "reconnectionAttempts": "Infinity",
-            "timeout" : 10000,
-        };
-        var socket = io(connectionOptions);
+var connectionOptions =  {
+    "force new connection" : true,
+   "reconnectionAttempts": "Infinity",
+   "timeout" : 10000,
+};
+var socket = io(connectionOptions);
 ```
 
 Now it works locally *and* when hosted on a server with no proxy.
