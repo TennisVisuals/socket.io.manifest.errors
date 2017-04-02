@@ -17,12 +17,13 @@ to
 ## Original Error
 In the Javascript Console:
 
-```socket.io-1.2.0.js:2 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t=1491065530785-0 net::ERR_FAILED```
+```
+socket.io-1.2.0.js:2 GET http://localhost:3000/socket.io/?EIO=3&transport=polling&t=1491065530785-0 net::ERR_FAILED
+```
 
 to remove the cache in Chrome:
 ```
         chrome://appcache-internals/
-        
 ```
 
 ## FIX
