@@ -30,7 +30,7 @@ chrome://appcache-internals/
 
 ```
 var connectionOptions =  {
-    "force new connection" : true,
+   "force new connection" : true,
    "reconnectionAttempts": "Infinity",
    "timeout" : 10000,
 };
