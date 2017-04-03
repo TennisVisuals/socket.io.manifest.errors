@@ -37,7 +37,7 @@ var connectionOptions =  {
 var socket = io(connectionOptions);
 ```
 
-Now it works *exactly once* when hosted on a server with no proxy.  Reloading with file with ```<html manifest='index.manifest'>``` again gives ```net::ERR_FAILED``` error in the Javascript console.
+Now it works *exactly once* when hosted on a server with no proxy.  Reloading with the manifest again gives ```net::ERR_FAILED``` error in the Javascript console.
 
 ## Cloudflare and Nginx
 
