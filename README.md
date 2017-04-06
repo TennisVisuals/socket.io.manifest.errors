@@ -1,6 +1,8 @@
 # socket.io.manifest.errors
 
-I have been having trouble getting socket.io to work after adding .manifest file.  
+***this issue has now been resolved***
+
+I had been having trouble getting socket.io to work after adding .manifest file.  
 
 - npm install
 - npm start
@@ -64,3 +66,14 @@ GET https://hiveeye.net/socket.io/?EIO=3&transport=polling&t=Lik5STN net::ERR_FA
 
 GET https://hiveeye.net/socket.io/?EIO=3&transport=polling&t=Lik5STN net::ERR_FAILED
 ```
+
+## The Fix
+
+Was as simple as adding:
+
+```
+Network:
+*
+```
+
+... to the end of the manifest file!
